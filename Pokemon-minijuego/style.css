@@ -8,18 +8,19 @@ body {
     background: #000000;
     font-family: 'Courier New', monospace;
     color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    padding: 16px;
 }
 
 .fondo {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #00043a7e;
     display: flex;
     justify-content: center;
@@ -28,15 +29,20 @@ body {
 .fondo_gameboy {
     background-image: url("images/background_gb.jpg");
     padding-top: 180px;
-    width: 736px;
-    height: 980px;
+    width: min(100%, 736px);
+    max-width: 736px;
+    height: auto;
     display: flex;
     justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .game-container {
-    width: 77%;
-    height: 50%;
+    width: 90%;
+    max-width: 700px;
+    min-height: 420px;
     background-color: #e4c5a269;
     border: 2px solid #ffffff;
     position: relative;
@@ -46,11 +52,14 @@ body {
 }
 
 .battle-area {
-    height: 320px;
+    min-height: 260px;
+    height: auto;
     position: relative;
     background-image: url("images/background_game.png");
+    background-size: cover;
+    background-position: center;
     border-bottom: 2px solid #ffffff;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .selector-overlay {
@@ -89,26 +98,24 @@ body {
     height: 80px;
 }
 
-.enemy-pokemon {
+.enemy-pokemon,
+.player-pokemon {
     position: absolute;
-    top: 30px;
-    right: 40px;
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.enemy-pokemon {
+    top: 30px;
+    right: 40px;
+}
+
 .player-pokemon {
-    position: absolute;
     bottom: 20px;
     left: 40px;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .pokemon-sprite {
