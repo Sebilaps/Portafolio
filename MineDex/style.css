@@ -507,7 +507,7 @@ body {
         border-width: 1px;
     }
     .battle-area {
-        min-height: 220px;
+        min-height: 200px;
     }
     .text-box {
         height: auto;
@@ -537,19 +537,19 @@ body {
         padding: 6px 10px;
     }
     .enemy-stats {
-        top: 16px;
+        top: 20px;
         left: 10px;
     }
     .player-stats {
-        bottom: 16px;
+        bottom: 20px;
         right: 10px;
     }
     .enemy-pokemon {
-        top: 60px;
+        top: 90px;
         right: 10px;
     }
     .player-pokemon {
-        bottom: 60px;
+        bottom: 90px;
         left: 10px;
     }
     .pokemon-sprite {
