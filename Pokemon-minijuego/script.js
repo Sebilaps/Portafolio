@@ -236,14 +236,11 @@ function seleccionarParaEquipo(idPokemon) {
     actualizarVistaResumenEquipo();
 
     if (equipoJugador.length === 6) {
-        // Construir equipo enemigo robusto para 6 pokémon.
         equipoEnemigo = [];
 
         const allKeys = Object.keys(POKEDEX);
-        // Posibles enemigos que no estén en el equipo del jugador
         let potential = allKeys.filter(k => !equipoJugador.some(p => p.id === k));
 
-        // helper para barajar
         function shuffle(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -254,7 +251,6 @@ function seleccionarParaEquipo(idPokemon) {
 
         potential = shuffle(potential.slice());
 
-        // Si hay suficientes pokémon distintos, usarlos; si no, rellenar con copias o con el equipo del jugador invertido.
         if (potential.length >= 6) {
             potential.slice(0, 6).forEach(llave => {
                 const bEnemigo = POKEDEX[llave];
@@ -272,7 +268,6 @@ function seleccionarParaEquipo(idPokemon) {
                 });
             });
         } else if (potential.length > 0) {
-            // usar todos los posibles y rellenar hasta 6 con selecciones aleatorias (permitiendo duplicados si es necesario)
             potential.forEach(llave => {
                 const bEnemigo = POKEDEX[llave];
                 equipoEnemigo.push({
@@ -288,7 +283,6 @@ function seleccionarParaEquipo(idPokemon) {
                     estado: null
                 });
             });
-            // rellenar
             const filler = shuffle(allKeys.slice());
             let i = 0;
             while (equipoEnemigo.length < 6) {
@@ -309,7 +303,6 @@ function seleccionarParaEquipo(idPokemon) {
                 i++;
             }
         } else {
-            // Si el jugador seleccionó todos los pokémon del POKEDEX, crear un equipo enemigo basado en el propio equipo del jugador (orden invertido).
             const espejo = equipoJugador.slice().reverse();
             espejo.forEach((pk, idx) => {
                 equipoEnemigo.push({
