@@ -1,23 +1,46 @@
+:root {
+    --primary-color: #388E3C;
+    --secondary-color: #2E7D32;
+    --dark-bg: #1a1a1a;
+    --light-text: #f4f4f4;
+    --card-bg: #2d2d2d;
+    --accent: #ffeb3b;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #000;
+    padding: 1rem 5%;
     background: #000000;
     font-family: 'Courier New', monospace;
     color: #ffffff;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+display: flex;
+    justify-content: space-between;
+align-items: center;
+    border-bottom: 4px solid var(--primary-color);
+    position: sticky;
     justify-content: center;
     font-size: 14px;
     padding: 16px;
 }
 
 .fondo {
-    top: 0;
+top: 0;
+    z-index: 100;
     left: 0;
     width: 100vw;
     min-height: 100vh;
@@ -26,6 +49,9 @@ body {
     justify-content: center;
 }
 
+.intro-navigation {
+    padding: 4rem 5%;
+    text-align: center;
 .fondo_gameboy {
     background-image: url("images/background_gb.jpg");
     padding-top: 180px;
@@ -39,6 +65,10 @@ body {
     background-position: top center;
 }
 
+.container-info h3 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
 .game-container {
     width: 90%;
     max-width: 700px;
@@ -51,6 +81,12 @@ body {
     border-color: #0000003d;
 }
 
+.nav-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 .battle-area {
     min-height: 260px;
     height: auto;
@@ -62,6 +98,15 @@ body {
     overflow: hidden;
 }
 
+.nav-card-item {
+    background-color: var(--card-bg);
+    border: 3px solid #444;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 300px;
+    text-decoration: none; 
+    color: white;
+    transition: all 0.3s ease;
 .selector-overlay {
     position: fixed;
     top: 0; left: 0;
@@ -74,50 +119,85 @@ body {
     text-align: center;
 }
 
+.nav-card-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
 .pokemon-options {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
     margin-top: 20px;
 }
 
+.logo h1 span {
+    color: var(--primary-color);
 .sel-card {
     cursor: pointer;
     border: 2px solid white;
     padding: 10px;
     transition: transform 0.2s ease, filter 0.2s ease, background 0.2s ease;
+    width: 120px;
+    min-width: 110px;
 }
 
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
 .sel-card:hover {
     transform: scale(1.05);
     filter: brightness(0.8);
     background: #333;
 }
 
+.nav a:hover {
+    color: var(--primary-color);
 .sel-card img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
 .enemy-pokemon,
 .player-pokemon {
     position: absolute;
     width: 130px;
     height: 130px;
-    display: flex;
+display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
+align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
 }
 
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 .enemy-pokemon {
     top: 30px;
     right: 40px;
 }
 
+.search-bar {
+    margin-top: 20px;
 .player-pokemon {
     bottom: 20px;
     left: 40px;
 }
 
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
 .pokemon-sprite {
     width: 110px;
     height: 110px;
@@ -127,6 +207,14 @@ body {
     z-index: 2;
 }
 
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.3s;
 .enemy-stats, .player-stats {
     position: absolute;
     background: linear-gradient(to bottom, #fcfcfc 0%, #e0e0d8 40%, #d0d0c8 100%);
@@ -140,6 +228,8 @@ body {
     z-index: 5;
 }
 
+.search-bar button:hover {
+    background-color: var(--secondary-color);
 .enemy-stats {
     top: 25px;
     left: 25px;
@@ -148,6 +238,11 @@ body {
     padding-right: 28px;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 10px;
 .player-stats {
     bottom: 30px;
     right: 25px;
@@ -156,6 +251,12 @@ body {
     padding-left: 28px;
 }
 
+.filter-btn {
+    padding: 8px 15px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: white;
+    cursor: pointer;
 .stats-header {
     display: flex;
     justify-content: space-between;
@@ -164,12 +265,19 @@ body {
     margin-bottom: 2px;
 }
 
+.filter-btn.active {
+    background: var(--primary-color);
 .sub-stats-top {
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
 .stat-name {
     color: #303030;
     font-size: 13px;
@@ -177,15 +285,27 @@ body {
     letter-spacing: 1px;
 }
 
+.about-wiki {
+    padding: 4rem 5%;
+    background-color: #252525; 
+    border-top: 4px solid var(--primary-color);
 .level-label-gba {
     color: #404040;
     font-size: 12px;
     font-weight: bold;
 }
 
+.about-container {
 .hp-container-gba {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 2;
     background: #484848; 
     border: 2px solid #a0a0a0;
     border-radius: 10px;
@@ -195,6 +315,10 @@ body {
     margin-top: 2px;
 }
 
+.about-text h2 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 .hp-label-gba {
     color: #ffb800;
     font-size: 10px;
@@ -205,6 +329,10 @@ body {
     font-family: sans-serif;
 }
 
+.about-text p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
 .hp-bar-gba {
     flex: 1;
     height: 6px;
@@ -213,24 +341,50 @@ body {
     overflow: hidden;
 }
 
+.about-features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 .hp-fill {
     height: 100%;
     width: 100%;
     transition: width 0.4s ease-out;
 }
 
+.feature {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 4px;
 .hp-fill.hp-verde {
     background: linear-gradient(to bottom, #00ff66 0%, #00a844 100%) !important;
 }
 
+.feature strong {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--primary-color);
 .hp-fill.hp-amarillo {
     background: linear-gradient(to bottom, #ffde00 0%, #c89e00 100%) !important;
 }
 
+.feature span {
+    font-size: 0.9rem;
+    color: #888;
 .hp-fill.hp-rojo {
     background: linear-gradient(to bottom, #ff3b30 0%, #b8140c 100%) !important;
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature {
+        border-left: none;
+        border-top: 5px solid var(--primary-color);
+    }
 .hp-numbers-gba {
     color: #404040;
     font-size: 11px;
@@ -240,14 +394,22 @@ body {
     margin-top: 2px;
 }
 
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 .text-box {
     height: 80px;
     background: #f0f0f0c4;
     border: 8px solid #acacac;
     padding: 8px;
-    position: relative;
+position: relative;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 .text-content {
     color: #000000;
     font-size: 12px;
@@ -262,6 +424,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.card-image {
+    background-color: #3d3d3d;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 .battle-menu, .action-menu {
     position: absolute;
     bottom: 0;
@@ -273,14 +441,24 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     z-index: 20;
+    max-width: 100%;
 }
 
+.card-image img {
+    width: 120px;
+    transition: transform 0.5s;
 .battle-menu {
     border: 2px solid #ffffff;
     border-bottom: none;
     border-right: none;
 }
 
+.card-icon img {
+    width: 100%;      
+    max-width: 120px;  
+    height: auto;      
+    object-fit: contain;
+    image-rendering: pixelated; 
 .action-menu {
     border: 3px solid #f0f0f0c4;
     border-bottom: none;
@@ -290,14 +468,19 @@ body {
     text-shadow: none;
 }
 
+.card-icon {
+    height: 150px;    
 .menu-option {
     background: #b9b6cec4;
     border: 2px solid #f0f0f0c4;
     color: #000000;
     font-size: 15px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+display: flex;
+    justify-content: center;
+align-items: center;
+    overflow: hidden;  
+    margin-bottom: 1rem;
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
@@ -305,6 +488,8 @@ body {
     padding: 4px;
 }
 
+.card:hover .card-image img {
+    transform: scale(1.1) rotate(5deg);
 .menu-option:hover {
     filter: brightness(0.8);
     transform: scale(0.98);
@@ -312,25 +497,46 @@ body {
     color: #ffffff;
 }
 
+.card-info {
+    padding: 1.5rem;
 .action-menu .menu-option:hover {
     background: #7a7791;
     color: #ffffff;
 }
 
+.blocks-section {
+    padding: 4rem 5%;
+    background-color: #252525;
 .menu-option.disabled {
     color: #666666;
     cursor: not-allowed;
 }
 
+.blocks-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent);
 .menu-option.disabled:hover {
     background: #000000;
 }
 
+.blocks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
 .log-entry {
     margin-bottom: 4px;
     animation: fadeIn 0.2s ease-out;
 }
 
+.block-item {
+    background: #333;
+    padding: 1rem;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: border-color 0.3s;
 .sel-card.keyboard-selected-card {
     background-color: #dc4840 !important; 
     border: 3px dashed #ffffff !important;
@@ -338,23 +544,40 @@ body {
     color: #ffffff !important;
 }
 
+.block-item:hover {
+    border-color: var(--primary-color);
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(3px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+.block-icon {
+    width: 64px;
+    height: 64px;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 .api-search-box {
     margin-top: 15px;
     border-top: 2px dashed #ffffff;
     padding-top: 10px;
 }
 
+.block-icon img {
+    width: 48px;
+    image-rendering: pixelated; 
+    animation: pulse 2s infinite ease-in-out;
 .api-search-box h3 {
     font-size: 11px;
     margin-bottom: 8px;
     letter-spacing: 1px;
 }
 
+.block-detail h4 {
+    color: white;
+    font-size: 1rem;
 .api-search-box input {
     background: #000;
     border: 2px solid #fff;
@@ -367,6 +590,9 @@ body {
     margin-right: 8px;
 }
 
+.block-detail p {
+    font-size: 0.8rem;
+    color: #888;
 .api-search-box button {
     background: #fff;
     color: #000;
@@ -378,22 +604,48 @@ body {
     text-transform: uppercase;
 }
 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 .api-search-box button:hover {
     background: #a0a0a0;
 }
 
+.tooltip {
 .team-summary {
-    margin-top: 15px;
+margin-top: 15px;
+    background: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
     font-size: 11px;
     font-weight: bold;
     color: #ffd700;
 }
 
+.stats {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    width: 100%;
+    background: #444;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid var(--accent);
+    z-index: 10;
 .disabled-card {
     opacity: 0.3;
     pointer-events: none;
 }
 
+.tooltip:hover .stats {
+    display: block;
+    animation: slideUp 0.3s forwards;
 .retro-alert {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -404,6 +656,9 @@ body {
     align-items: center;
 }
 
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 .retro-alert-content {
     background: #f0f0f0;
     border: 4px double #000;
@@ -413,6 +668,11 @@ body {
     width: 300px;
 }
 
+.multimedia {
+    padding: 3rem 5%;
+    background-color: #333; 
+    text-align: center;
+    border-top: 4px solid #1a1a1a;
 .retro-alert-content button {
     margin-top: 15px;
     background: #000;
@@ -423,6 +683,11 @@ body {
     cursor: pointer;
 }
 
+.multimedia h2 {
+    color: var(--accent);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 0 #000; 
 .status-badge {
     display: inline-block;
     font-size: 9px;
@@ -434,17 +699,56 @@ body {
     min-height: 12px;
 }
 
+.video-container {
+    margin-top: 2rem;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #333;
+}
+
+.video-frame {
+    background-color: #555; 
+    padding: 15px; 
+    border: 8px solid #1a1a1a; 
+    max-width: 640px; 
+    margin: 0 auto; 
+    border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA0SURBVChTY7hx48Z/BjQDkNfU1PyH0YyMjP+IChgYGBgY4AIGBgaGgICAgICAgICAgICAgAALCwMCKDoG7gAAAABJRU5ErkJggg==') 2 repeating;
+    image-rendering: pixelated; 
+}
+.video-ratio {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    background: #000; 
 .status-badge.quemado {
     background: #ff4500;
     border: 1px solid #8b0000;
 }
 
+.video-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; 
 .status-badge.paralizado {
     background: #ffd700;
     color: #000;
     border: 1px solid #b8860b;
 }
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 .menu-option.keyboard-selected {
     background: #dc4840 !important; 
     color: #ffffff !important;
@@ -452,23 +756,125 @@ body {
     animation: blinkGBA 0.8s infinite alternate;
 }
 
+.footer {
+    background: #000;
+    padding: 2rem;
+    text-align: center;
+    border-top: 2px solid #333;
 .menu-option.keyboard-selected::before {
     content: "▶ ";
     margin-right: 5px;
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .game-container {
-        width: 100vw;
-        height: 100vh;
-        max-width: none;
-        max-height: none;
+@media (max-width: 1024px) {
+    .fondo {
+        align-items: flex-start;
+        padding-top: 20px;
     }
-    .battle-area { height: 60vh; }
-    .text-box { height: 20vh; }
-    .battle-menu, .action-menu { width: 50vw; height: 20vh; }
-    .pokemon-sprite { width: 70px; height: 70px; }
+    .fondo_gameboy {
+        width: min(100%, 1000px);
+        padding-top: 140px;
+    }
+    .game-container {
+        width: 95vw;
+        height: auto;
+        min-height: 380px;
+    }
+    .battle-area {
+        min-height: 220px;
+    }
+    .pokemon-sprite {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    body {
+        padding: 8px;
+        justify-content: flex-start;
+    }
+    .fondo {
+        width: 100%;
+        min-height: auto;
+    }
+    .fondo_gameboy {
+        width: 100%;
+        padding-top: 120px;
+        margin: 0 auto;
+    }
+    .game-container {
+        width: 100%;
+        min-height: 360px;
+        max-width: 100%;
+        border-width: 1px;
+    }
+    .battle-area {
+        min-height: 200px;
+    }
+    .text-box {
+        height: auto;
+        min-height: 70px;
+}
+    .nav {
+        margin-top: 15px;
+    .battle-menu, .action-menu {
+        width: calc(100% - 20px);
+        height: auto;
+        position: static;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 8px;
+        margin-top: 10px;
+        padding: 6px;
+}
+    .nav a {
+        margin: 0 10px;
+    .menu-option {
+        font-size: 12px;
+        padding: 8px 6px;
+}
+    .search-bar input {
+        width: 180px;
+    .pokemon-sprite {
+        width: 80px;
+        height: 80px;
+}
+    .enemy-stats, .player-stats {
+        width: auto;
+        max-width: 90%;
+        padding: 6px 10px;
+    }
+    .enemy-stats {
+        top: 20px;
+        left: 10px;
+    }
+    .player-stats {
+        bottom: 20px;
+        right: 10px;
+    }
+    .enemy-pokemon {
+        top: 90px;
+        right: 10px;
+    }
+    .player-pokemon {
+        bottom: 90px;
+        left: 10px;
+    }
+    .pokemon-sprite {
+        width: 70px;
+        height: 70px;
+    }
+    .api-search-box input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .api-search-box {
+        padding: 8px;
+    }
 }
 
 @keyframes blinkGBA {
