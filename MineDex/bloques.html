@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineDex - Catálogo de Bloques</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bloques.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Mine<span>Dex</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="criaturas.html">Criaturas</a>
+            <a href="bloques.html">Bloques</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="height: 30vh;">
+            <div class="hero-content">
+                <h2>Catálogo de Bloques</h2>
+                <p>Materiales esenciales para tu supervivencia y construcción</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Construcción</button>
+            <button class="filter-btn">Utilitarios</button>
+            <button class="filter-btn">Minerales</button>
+        </section>
+
+    <section class="grid-container">
+        
+        <article class="card">
+            <div class="card-image">
+                <img src="img/crafting_table.png" alt="Mesa de Trabajo">
+            </div>
+            <div class="card-info">
+                <h3>Mesa de Crafteo</h3>
+                <p>El bloque fundamental para fabricar herramientas y objetos avanzados.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 2.5</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:crafting_table</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/furnace.png" alt="Horno">
+            </div>
+            <div class="card-info">
+                <h3>Horno</h3>
+                <p>Permite fundir minerales y cocinar alimentos para sobrevivir.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.5</li>
+                        <li>Herramienta: Pico</li>
+                        <li>ID: minecraft:furnace</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/chest.png" alt="Cofre">
+            </div>
+            <div class="card-info">
+                <h3>Cofre</h3>
+                <p>Almacena hasta 27 montones de objetos diferentes.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Capacidad: 27 slots</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:chest</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/diamond_ore.png" alt="Mena de Diamante">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Diamante</h3>
+                <p>Uno de los materiales más valiosos y resistentes del juego.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Hierro o +</li>
+                        <li>ID: minecraft:diamond_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/tnt.png" alt="TNT">
+            </div>
+            <div class="card-info">
+                <h3>TNT</h3>
+                <p>Bloque explosivo utilizado para minería o defensa.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Poder: 4</li>
+                        <li>Activación: Redstone</li>
+                        <li>ID: minecraft:tnt</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/grass_block.png" alt="Bloque de Hierba">
+            </div>
+            <div class="card-info">
+                <h3>Bloque de Hierba</h3>
+                <p>El bloque más común en la superficie del mundo.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 0.6</li>
+                        <li>Herramienta: Pala</li>
+                        <li>ID: minecraft:grass_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article> <article class="card">
+            <div class="card-image">
+                <img src="img/netherite_block.png" alt="Bloque de Netherita ">
+            </div>
+            <div class="card-info">
+                <h3>Escombros Ancestrales</h3>
+                <p>El material más costoso y resistente, esencial para mejorar el equipo de diamante.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 50</li>
+                        <li>Resistencia: Explosiones</li>
+                        <li>ID: minecraft:netherite_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/obsidian.png" alt="Obsidiana">
+            </div>
+            <div class="card-info">
+                <h3>Obsidiana</h3>
+                <p>Bloque extremadamente duro necesario para construir el portal al Nether.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 50</li>
+                        <li>Herramienta: Pico Diamante+</li>
+                        <li>ID: minecraft:obsidian</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/End_Portal.png" alt="Marco del Portal del End">
+            </div>
+            <div class="card-info">
+                <h3>Portal De End</h3>
+                <p>Estructura clave encontrada en fortalezas para acceder a la dimensión del End.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: Indestructible</li>
+                        <li>Ubicación: Strongholds</li>
+                        <li>ID: minecraft:end_portal_frame</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/Ojo_de_Ender.png" alt="Ojo de Ender">
+            </div>
+            <div class="card-info">
+                <h3>Ojo de Ender</h3>
+                <p>Objeto vital para localizar fortalezas y activar el portal hacia el jefe final.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Uso: Localización</li>
+                        <li>Origen: Crafteo</li>
+                        <li>ID: minecraft:ender_eye</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/bookshelf.png" alt="Librería">
+            </div>
+            <div class="card-info">
+                <h3>Librería</h3>
+                <p>Bloque decorativo que aumenta el nivel de los encantamientos cercanos.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 1.5</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:bookshelf</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/iron_ore.png" alt="Mena de Hierro">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Hierro</h3>
+                <p>Mineral versátil utilizado para fabricar la mayoría de herramientas y armaduras.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Piedra o +</li>
+                        <li>ID: minecraft:iron_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/glass.png" alt="Cristal">
+            </div>
+            <div class="card-info">
+                <h3>Cristal</h3>
+                <p>Bloque transparente que se obtiene al fundir arena en un horno.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 0.3</li>
+                        <li>Toque de Seda: Requerido</li>
+                        <li>ID: minecraft:glass</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/gold_ore.png" alt="Mena de Oro">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Oro</h3>
+                <p>Mineral preciado usado para manzanas doradas, relojes y propulsión.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Hierro o +</li>
+                        <li>ID: minecraft:gold_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/anvil.png" alt="Yunque">
+            </div>
+            <div class="card-info">
+                <h3>Yunque</h3>
+                <p>Permite reparar objetos, renombrarlos y combinar libros de encantamiento.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Gravedad: Sí</li>
+                        <li>Material: Hierro</li>
+                        <li>ID: minecraft:anvil</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/glowstone.png" alt="Piedra Luminosa">
+            </div>
+            <div class="card-info">
+                <h3>Piedra Luminosa</h3>
+                <p>Bloque que emite una luz constante, encontrado en el techo del Nether.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Nivel de Luz: 15</li>
+                        <li>Origen: Nether</li>
+                        <li>ID: minecraft:glowstone</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/redstone_ore.png" alt="Mena de Redstone">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Redstone</h3>
+                <p>Mineral que emite energía al ser activado, vital para la automatización.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Hierro o +</li>
+                        <li>ID: minecraft:redstone_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/stone_bricks.png" alt="Ladrillos de Piedra">
+            </div>
+            <div class="card-info">
+                <h3>Ladrillos de Piedra</h3>
+                <p>Bloque de construcción elegante muy común en fortalezas y ruinas.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 1.5</li>
+                        <li>Herramienta: Pico</li>
+                        <li>ID: minecraft:stone_bricks</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/cactus.png" alt="Cactus">
+            </div>
+            <div class="card-info">
+                <h3>Cactus</h3>
+                <p>Planta del desierto que daña a entidades y destruye objetos al contacto.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Daño: 1 punto</li>
+                        <li>Uso: Tinte Verde</li>
+                        <li>ID: minecraft:cactus</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/soul_sand.png" alt="Arena de Almas">
+            </div>
+            <div class="card-info">
+                <h3>Arena de Almas</h3>
+                <p>Bloque del Nether que ralentiza el movimiento y se usa para invocar al Wither.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Efecto: Ralentizar</li>
+                        <li>Uso: Cultivo Verrugas</li>
+                        <li>ID: minecraft:soul_sand</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/emerald_ore.png" alt="Mena de Esmeralda">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Esmeralda</h3>
+                <p>Mineral extremadamente raro que sirve como moneda de cambio con los aldeanos.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Hierro o +</li>
+                        <li>ID: minecraft:emerald_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/redstone_lamp.png" alt="Lámpara de Redstone">
+            </div>
+            <div class="card-info">
+                <h3>Lámpara de Redstone</h3>
+                <p>Bloque decorativo que emite luz solo cuando recibe una señal de redstone.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Luz: 15 (activa)</li>
+                        <li>Tipo: Mecanismo</li>
+                        <li>ID: minecraft:redstone_lamp</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/end_stone.png" alt="Piedra del End">
+            </div>
+            <div class="card-info">
+                <h3>Piedra del End</h3>
+                <p>Material base de la dimensión del End, muy resistente a las explosiones.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Resistencia: 9.0</li>
+                        <li>ID: minecraft:end_stone</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/oak_leaves.png" alt="Hojas de Roble">
+            </div>
+            <div class="card-info">
+                <h3>Hojas de Roble</h3>
+                <p>Bloque que forma la copa de los árboles; puede soltar brotes o manzanas.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 0.2</li>
+                        <li>Herramienta: Cizallas</li>
+                        <li>ID: minecraft:oak_leaves</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/enchanting_table.png" alt="Mesa de Encantamientos">
+            </div>
+            <div class="card-info">
+                <h3>Mesa de Encantos</h3>
+                <p>Permite imbuir herramientas y armaduras con poderes mágicos usando experiencia.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 5.0</li>
+                        <li>Pico: Diamante o +</li>
+                        <li>ID: minecraft:enchanting_table</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/magma_block.png" alt="Bloque de Magma">
+            </div>
+            <div class="card-info">
+                <h3>Bloque de Magma</h3>
+                <p>Encontrado en el Nether y océanos; daña a quien camine sobre él sin protección.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Daño: Fuego</li>
+                        <li>Luz: 3</li>
+                        <li>ID: minecraft:magma_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/melon.png" alt="Sandía">
+            </div>
+            <div class="card-info">
+                <h3>Sandía (Melón)</h3>
+                <p>Bloque que se divide en rodajas al romperse, útil para recuperar hambre rápidamente.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 1.0</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:melon</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/gravel.png" alt="Grava">
+            </div>
+            <div class="card-info">
+                <h3>Grava</h3>
+                <p>Bloque afectado por la gravedad que puede soltar pedernal al ser excavado.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Gravedad: Sí</li>
+                        <li>Pala: Recomendada</li>
+                        <li>ID: minecraft:gravel</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/copper_block.png" alt="Bloque de Cobre">
+            </div>
+            <div class="card-info">
+                <h3>Bloque de Cobre</h3>
+                <p>Metal decorativo que cambia de color a verde con el tiempo debido a la oxidación.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Oxidación: Sí</li>
+                        <li>Dureza: 3.0</li>
+                        <li>ID: minecraft:copper_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/sponge.png" alt="Esponja">
+            </div>
+            <div class="card-info">
+                <h3>Esponja</h3>
+                <p>Bloque raro capaz de absorber agua en un radio de 7 bloques a su alrededor.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Estado: Seca/Mojada</li>
+                        <li>Origen: Monumento</li>
+                        <li>ID: minecraft:sponge</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MineDex - Proyecto Estudiante</p>
+        <div class="social">
+            <span>GitHub</span>
+            <span>Discord</span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineDex - La Enciclopedia de Bloques</title>
+    <link rel="stylesheet" href="criaturas.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Mine<span>Dex</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="criaturas.html">Criaturas</a>
+            <a href="bloque.html">Bloques</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="pixel-title-green">Criaturas / Mobs</h1>
+        </section>
+        <div class="filters">
+                            <a href="#overworld" class="filter-btn active">Overworld</a>
+                            <a href="#nether" class="filter-btn active">Nether</a>
+                            <a href="#the-end" class="filter-btn active">The End</a>
+        </div>
+        <br>
+        <br>
+        <br>
+            
+        
+        <section>
+            <h3 style="color: bisque; text-align: center; height: 40px;">JUGADOR</h3>
+
+            <section class="grid-container">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="img/steve.png" alt="Steve">
+                    </div>
+                    <div class="card-info">
+                        <h3>Steve</h3>
+                        <p>El protagonista principal de la aventura.</p>
+                        <div class="tooltip">
+                            <span>Estadísticas</span>
+                            <ul class="stats">
+                                <li>Vida: 20</li>
+                                <li>Habilidad: Construir</li>
+                                <li>Tipo: Jugador</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="img/alex.png" alt="Alex">
+                    </div>
+                    <div class="card-info">
+                        <h3>Alex</h3>
+                        <p>Personaje jugable, aventurera y valiente.</p>
+                        <div class="tooltip">
+                            <span>Estadísticas</span>
+                            <ul class="stats">
+                                <li>Vida: 20</li>
+                                <li>Daño: Variable (según arma)</li>
+                                <li>Tipo: Jugador</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+            <h3 style="color: bisque; text-align: center; height: 40px;">INVOCADO</h3>
+            <section class="grid-container">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="img/wither.png" alt="Wither">
+                    </div>
+                    <div class="card-info">
+                        <h3>Wither</h3>
+                        <p>Jefe invocado que dispara calaveras explosivas.</p>
+                        <div class="tooltip">
+                            <span>Estadísticas</span>
+                            <ul class="stats">
+                                <li>Vida: 300</li>
+                                <li>Daño: 8 (explosivo)</li>
+                                <li>Tipo: Hostil</li>
+                                <li>Dimensión: Nether / Overworld / End</li>
+                                <li>Materiales: 4 Arena de Almas + 3 Cabezas de Wither</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="img/iron-golem.png" alt="Gólem de Hierro">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gólem de Hierro</h3>
+                        <p>Defensor de aldeas y jugadores que lanza a los enemigos por los aires.</p>
+                        <div class="tooltip">
+                            <span>Estadísticas</span>
+                            <ul class="stats">
+                                <li>Vida: 100</li>
+                                <li>Daño: 7.5 a 21.5</li>
+                                <li>Tipo: Neutral / Defensivo</li>
+                                <li>Dimensión: Nether / Overworld / End</li>
+                                <li>Materiales: 4 Bloques de Hierro + 1 Calabaza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="img/snow-golem.png" alt="Gólem de Nieve">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gólem de Nieve</h3>
+                        <p>Mob utilitario que dispara bolas de nieve para distraer enemigos.</p>
+                        <div class="tooltip">
+                            <span>Estadísticas</span>
+                            <ul class="stats">
+                                <li>Vida: 4</li>
+                                <li>Daño: 0 (Causa daño solo a Blazes)</li>
+                                <li>Tipo: Neutral / Defensivo</li>
+                                <li>Dimension: Nether (Se muere)/ Overworld / End</li>
+                                <li>Materiales: 2 Bloques de Nieve + 1 Calabaza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+            <br> 
+            <br>
+        </section>
+            <section id="overworld"></section>
+            <div>
+                <section class="overworld">
+                <h2 class="title-overworld">Overworld</h2>
+                
+                <div class="filters">
+                            <a href="#neutrales_overworld" class="seccion">Neutrales</a>
+                            <a href="#hostiles_overworld" class="seccion">Hostiles</a>
+                            <a href="#pacificos_overworld" class="seccion">Pacificos</a>
+                </div>
+            </div>
+            <section id="neutrales_overworld"></section>
+            <br>
+            <br>
+            <div>
+                <h3 style="color: bisque; text-align: center; height: 40px;">NEUTRALES</h3>
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/enderman.png" alt="Enderman">
+                        </div>
+                        <div class="card-info">
+                            <h3>Enderman</h3>
+                            <p>Misteriosa criatura que se teletransporta.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 40</li>
+                                    <li>Daño: 7</li>
+                                    <li>Tipo: Neutral</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/spider.png" alt="Araña">
+                        </div>
+                        <div class="card-info">
+                            <h3>Araña</h3>
+                            <p>Rápida y capaz de trepar paredes.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 16</li>
+                                    <li>Daño: 2</li>
+                                    <li>Tipo: Hostil (de noche)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section id="hostiles_overworld"></section>
+                <br>
+                <br>
+                <h3 style="color: bisque; text-align: center; height: 40px;">HOSTILES</h3>
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/creeper.gif" alt="Creeper">
+                        </div>
+                        <div class="card-info">
+                            <h3>Creeper</h3>
+                            <p>Criatura hostil que explota al acercarse.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20</li>
+                                    <li>Daño: Variable</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/zombie.png" alt="Zombie">
+                        </div>
+                        <div class="card-info">
+                            <h3>Zombie</h3>
+                            <p>Criatura común que ataca en grupo.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20</li>
+                                    <li>Daño: 3</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/spider.png" alt="Araña">
+                        </div>
+                        <div class="card-info">
+                            <h3>Araña</h3>
+                            <p>Rápida y capaz de trepar paredes.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 16</li>
+                                    <li>Daño: 2</li>
+                                    <li>Tipo: Hostil (de noche)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/skeleton.png" alt="Esqueleto">
+                        </div>
+                        <div class="card-info">
+                            <h3>Esqueleto</h3>
+                            <p>Hostil arquero que dispara flechas desde la distancia.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20</li>
+                                    <li>Daño: 2-5 (flechas)</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/slime.png" alt="Slime">
+                        </div>
+                        <div class="card-info">
+                            <h3>Slime</h3>
+                            <p>Cubo viscoso que se divide en más pequeños al morir.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: Variable (según tamaño)</li>
+                                    <li>Daño: 2-4</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section id="pacificos_overworld"></section>
+                <br>
+                <br>
+                <h3 style="color: bisque; text-align: center; height: 40px;">PACIFICOS</h3>
+
+                    </div>
+                    <section class="grid-container">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/cow.png" alt="Vaca">
+                            </div>
+                            <div class="card-info">
+                                <h3>Vaca</h3>
+                                <p>Proporciona cuero, carne y leche. Un pilar de la supervivencia en el Overworld.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/mooshroom.png" alt="Champiñaca">
+                            </div>
+                            <div class="card-info">
+                                <h3>Champiñaca</h3>
+                                <p>Variante rara de las islas de setas. Produce estofado sospechoso si se usa un cuenco.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/sheep.png" alt="Oveja">
+                            </div>
+                            <div class="card-info">
+                                <h3>Oveja</h3>
+                                <p>Esencial para obtener lana. Se puede esquilar o teñir de 16 colores diferentes.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 8</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/pig.png" alt="Cerdo">
+                            </div>
+                            <div class="card-info">
+                                <h3>Cerdo</h3>
+                                <p>Puede ser montado con una montura y dirigido con una zanahoria en un palo.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/chicken.png" alt="Pollo">
+                            </div>
+                            <div class="card-info">
+                                <h3>Pollo</h3>
+                                <p>Pone huevos periódicamente y suelta plumas al morir, necesarias para flechas.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 4</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/rabbit.png" alt="Conejo">
+                            </div>
+                            <div class="card-info">
+                                <h3>Conejo</h3>
+                                <p>Criatura muy rápida y asustadiza. Suelta piel de conejo y patas de la suerte.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 3</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/horse.png" alt="Caballo">
+                            </div>
+                            <div class="card-info">
+                                <h3>Equinos</h3>
+                                <p>Caballos, burros y mulas. Ideales para el transporte rápido y carga de cofres.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 15-30</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/camel.png" alt="Camello">
+                            </div>
+                            <div class="card-info">
+                                <h3>Camello</h3>
+                                <p>Montura para dos personas encontrada en aldeas del desierto. Puede correr rápido.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 32</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/ocelot.png" alt="Ocelote">
+                            </div>
+                            <div class="card-info">
+                                <h3>Ocelote</h3>
+                                <p>Felino de la selva. Aunque no se domestica, ahuyenta de forma natural a los Creepers.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/frog.png" alt="Rana">
+                            </div>
+                            <div class="card-info">
+                                <h3>Rana</h3>
+                                <p>Habitante de pantanos. Come Slimes pequeños y crea bloques de Froglight.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/sniffer.png" alt="Sniffer">
+                            </div>
+                            <div class="card-info">
+                                <h3>Sniffer</h3>
+                                <p>Criatura antigua que olfatea el suelo para encontrar semillas de plantas raras.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 14</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/squid.png" alt="Calamar">
+                            </div>
+                            <div class="card-info">
+                                <h3>Calamar</h3>
+                                <p>Aparece en ríos y océanos. Suelta sacos de tinta negra al ser derrotado.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/fish.png" alt="Peces">
+                            </div>
+                            <div class="card-info">
+                                <h3>Peces</h3>
+                                <p>Bacalao, Salmón y Peces Tropicales. Son la base de la fauna marina.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 3</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/pufferfish.png" alt="Pez Globo">
+                            </div>
+                            <div class="card-info">
+                                <h3>Pez Globo</h3>
+                                <p>Se infla como mecanismo de defensa. Aplica veneno si el jugador lo toca.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 3</li>
+                                        <li>Daño: 0 (Veneno)</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/turtle.png" alt="Tortuga">
+                            </div>
+                            <div class="card-info">
+                                <h3>Tortuga Marina</h3>
+                                <p>Regresan siempre a su playa de origen para poner huevos en la arena.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 30</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/axolotl.png" alt="Axolote">
+                            </div>
+                            <div class="card-info">
+                                <h3>Axolote</h3>
+                                <p>Depredador acuático amigable. Puede regenerar su vida y atacar otros mobs marinos.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 14</li>
+                                        <li>Daño: 2 (a mobs)</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/cat.png" alt="Gato">
+                            </div>
+                            <div class="card-info">
+                                <h3>Gato</h3>
+                                <p>Se domestica con pescado crudo. Mantiene alejados a Creepers y Fantasmas.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 10</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/parrot.gif" alt="Loro">
+                            </div>
+                            <div class="card-info">
+                                <h3>Loro</h3>
+                                <p>Mascota voladora que imita los sonidos de los enemigos cercanos para avisarte.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 6</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/allay.png" alt="Allay">
+                            </div>
+                            <div class="card-info">
+                                <h3>Allay</h3>
+                                <p>Recoge objetos del suelo y los lleva al jugador o a un bloque de notas cercano.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 20</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/bat.png" alt="Murciélago">
+                            </div>
+                            <div class="card-info">
+                                <h3>Murciélago</h3>
+                                <p>Único mob puramente ambiental de las cuevas. No tiene utilidad ni daño.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 6</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/villager.png" alt="Aldeano">
+                            </div>
+                            <div class="card-info">
+                                <h3>Aldeano</h3>
+                                <p>Civil que comercia con esmeraldas. No tiene forma de atacar por sí mismo.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 20</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/wandering_trader.png" alt="Vendedor Ambulante">
+                            </div>
+                            <div class="card-info">
+                                <h3>Vendedor Ambulante</h3>
+                                <p>Aparece aleatoriamente con llamas. Vende objetos raros de distintos biomas.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 20</li>
+                                        <li>Daño: 0</li>
+                                        <li>Tipo: Pasivo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                    <section class="nether">
+                        <section id="nether"></section>
+                        <h2 class="title-nether">NETHER</h2>
+                        
+                        <div class="filters">
+                            <a href="#neutrales-nether" class="seccion">Neutrales</a>
+                            <a href="#hostiles-nether" class="seccion">Hostiles</a>
+                            <a href="#pacificos-nether" class="seccion">Pacificos</a>
+                        </div>
+                    </div>
+                    <section id="neutrales-nether"></section>
+                    <br>
+                    <br>
+
+            <div>
+                <h3 style="color: bisque; text-align: center; height: 40px;">NEUTRALES</h3>
+                <section id="neutrales-nether"></section>
+                    <section class="grid-container">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/zombie_pigman.png" alt="Zombie Pigman">
+                            </div>
+                            <div class="card-info">
+                                <h3>Zombie Pigman</h3>
+                                <p>Neutral hasta que es atacado, entonces se vuelve agresivo.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 20</li>
+                                        <li>Daño: 7 (espada de oro)</li>
+                                        <li>Tipo: Neutral/Hostil</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/enderman.png" alt="Enderman">
+                            </div>
+                            <div class="card-info">
+                                <h3>Enderman</h3>
+                                <p>Misteriosa criatura que se teletransporta.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 40</li>
+                                        <li>Daño: 7</li>
+                                        <li>Tipo: Neutral</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="img/piglin.png" alt="Piglin">
+                            </div>
+                            <div class="card-info">
+                                <h3>Piglin</h3>
+                                <p>Habitante del Nether que ataca si no llevas oro.</p>
+                                <div class="tooltip">
+                                    <span>Estadísticas</span>
+                                    <ul class="stats">
+                                        <li>Vida: 16</li>
+                                        <li>Daño: 5-9 (espada/ballesta)</li>
+                                        <li>Tipo: Hostil/Neutral</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                
+                <section id="hostiles-nether"></section>
+                <br>
+                <br>
+
+                <h3 style="color: bisque; text-align: center; height: 40px;">HOSTILES</h3>
+                
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/ghast.gif" alt="Ghast">
+                        </div>
+                        <div class="card-info">
+                            <h3>Ghast</h3>
+                            <p>Gran criatura flotante que dispara bolas de fuego.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 10</li>
+                                    <li>Daño: 17 (bola de fuego)</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/blaze.gif" alt="Blaze">
+                        </div>
+                        <div class="card-info">
+                            <h3>Blaze</h3>
+                            <p>Entidad ígnea que flota en las Fortalezas del Nether. Dispara ráfagas de tres bolas de fuego.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20 (10 corazones)</li>
+                                    <li>Daño: 6 (Fuego: 4-9)</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/whiter_skeleton.gif" alt="Wither Skeleton">
+                        </div>
+                        <div class="card-info">
+                            <h3>Wither Skeleton</h3>
+                            <p>Esqueleto negro del Nether que inflige efecto Wither.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20</li>
+                                    <li>Daño: 5 (espada de piedra)</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/magma_cube.gif" alt="Magma Cube">
+                        </div>
+                        <div class="card-info">
+                            <h3>Magma Cube</h3>
+                            <p>Versión ardiente del Slime que aparece en el Nether.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: Variable (según tamaño)</li>
+                                    <li>Daño: 4-6</li>
+                                    <li>Tipo: Hostil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </section>
+                <section id="pacificos-nether"></section>
+                <br>
+                <br>
+                
+                <h3 style="color: bisque; text-align: center; height: 40px;">PACIFICOS</h3>
+        
+                </div>
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/strider.gif" alt="Strider">
+                        </div>
+                        <div class="card-info">
+                            <h3>Strider</h3>
+                            <p>Criatura pacífica que camina sobre la lava. Puede ser montada usando una caña con hongo distorsionado.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 20 (10 corazones)</li>
+                                    <li>Daño: 0 (Pacífico)</li>
+                                    <li>Tipo: Pasivo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                <section class="the_end">
+                    <section id="the-end"></section>
+                <h2 class="title-the_end">END</h2>
+                
+                <div class="filters">
+                            <a href="#neutrales-the_end" class="seccion">Neutrales</a>
+                            <a href="#hostiles-the_end" class="seccion">Hostiles</a>
+                            <a href="#pacificos-the_end" class="seccion">Pacificos</a>
+                </div>
+            </div>
+            <section id="neutrales-the_end"></section>
+            <br>
+            <br>
+            <div>
+                <h3 style="color: bisque; text-align: center; height: 40px;">NEUTRALES</h3>
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/enderman.png" alt="Enderman">
+                        </div>
+                        <div class="card-info">
+                            <h3>Enderman</h3>
+                            <p>Misteriosa criatura que se teletransporta.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 40</li>
+                                    <li>Daño: 7</li>
+                                    <li>Tipo: Neutral</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section id="hostiles-the_end"></section>
+                <br>
+                <br>
+                <h3 style="color: bisque; text-align: center; height: 40px;">HOSTILES</h3>
+                <section class="grid-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/ender_dragon.gif" alt="Ender Dragón">
+                        </div>
+                        <div class="card-info">
+                            <h3>Ender Dragón</h3>
+                            <p>Jefe final del End que vuela y ataca con aliento y cargas dragontinas.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 200</li>
+                                    <li>Daño: 6 (Cuerpo), 10 (Aliento)</li>
+                                    <li>Dimensión: The End</li>
+                                    <li>Materiales: 4 Cristales del End (Para Reinvocación)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/shulker.gif" alt="Shulker Animado">
+                        </div>
+                        <div class="card-info">
+                            <h3>Shulker</h3>
+                            <p>Criatura estática que se esconde en caparazones y dispara proyectiles levitantes.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 30 (15 corazones)</li>
+                                    <li>Daño: 4 (Proyectil) + Efecto Levitación</li>
+                                    <li>Dimensión: The End (Ciudades del End)</li>
+                                    <li>Invocación: Aparece naturalmente en Ciudades del End</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/endermite.gif" alt="Endermite Animado">
+                        </div>
+                        <div class="card-info">
+                            <h3>Endermite</h3>
+                            <p>Pequeña criatura hostil que aparece a veces al usar perlas de ender.</p>
+                            <div class="tooltip">
+                                <span>Estadísticas</span>
+                                <ul class="stats">
+                                    <li>Vida: 8 (4 corazones)</li>
+                                    <li>Daño: 2 (Normal)</li>
+                                    <li>Dimensión: The End (principalmente)</li>
+                                    <li>Invocación: 5% de probabilidad al usar una Perla de Ender</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="pacificos-the_end"></section>
+                <br>
+                <br>
+                <h3 style="color: bisque; text-align: center; height: 40px;">PACIFICOS</h3>
+                <br>
+                <h2>No hay Mobs PACIFICOS en The End</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            
+        </section>
+
+        <section class="multimedia">
+            <h2>Tráiler Oficial</h2>
+            <div class="video-frame">
+                <div class="video-ratio">
+                    <iframe 
+                        src="https://www.youtube.com/embed/kSv6qlPtvR0" 
+                        title="YouTube video player" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 MineDex - Proyecto Estudiante</p>
+        <div class="social">
+            <span>GitHub</span>
+            <span>Discord</span>
+        </div>
+    </footer>
+
+</body>
+</html>

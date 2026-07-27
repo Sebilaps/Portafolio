@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+   <header>
+        <h1>Mi portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#habilidades">Mis Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="MineDex/index.html" target="_blank" rel="noopener noreferrer">MineDex</a></li>
+                <li><a href="Pokemon%20minijuego/index.html" target="_blank" rel="noopener noreferrer">Pokémon MiniJuego</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+        <section id="sobre-mi">
+            <h2>Desarrollador en formacion</h2>
+            <img src="fp.jpeg" alt="Foto de Perfil">
+            <dl>
+                <dt>2025 - presente</dt>
+                <dd>Estudiante de Segundo año de Ingenieria en Ejecucion de Informatica</dd>
+            </dl>
+            <p>LATAM <strong>HTML5</strong></p>
+        </section>
+
+        <hr>
+
+        <section id="habilidades">
+            <h3>Mis Habilidades</h3>
+            <ul>
+                <li><strong><em>HTML5 Intermedio</em></strong></li>
+                <li>Configuración de VS Code</li>
+                <li>Git (proximamente)</li>
+                <li>Atención al Cliente</li>
+                <li>Trabajo en Equipo</li>
+            </ul>
+            <p> --- <a href="https://github.com/Sebilaps" target="_blank"> GitHub</a>.</p>
+        </section>
+
+        <hr>
+
+        <section id="intereses">
+            <h3> Mis Intereses</h3>
+            <ul>
+                <li>Aprender desarrollo frontend avanzado</li>
+                <li>Crear aplicaciones móviles</li>
+                <li>Explorar la inteligencia artificial</li>
+            </ul>
+        </section>
+
+        <section id="proyecto-minedex" class="project-card">
+            <h3>Proyecto MineDex</h3>
+            <p>Este es un proyecto de desarrollo web que he creado para mostrar mis habilidades en HTML y CSS</p>
+            <a class="project-link" href="MineDex/index.html" target="_blank" rel="noopener noreferrer">Abrir MineDex</a>
+        </section>
+
+        <section id="proyecto-pokemon" class="project-card project-card-alt">
+            <h3>Pokémon MiniJuego</h3>
+            <p>También puedes abrir mi mini juego de Pokémon desde aquí para mostrar otra de mis creaciones.</p>
+            <a class="project-link" href="Pokemon%20minijuego/index.html" target="_blank" rel="noopener noreferrer">Jugar ahora</a>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h3>Contacto para reclutación</h3>
+            <p>Si tienes una oportunidad o quieres hablar conmigo, envía un mensaje.</p>
+            <form id="contact-form" class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="message" rows="5" placeholder="Escribe tu mensaje para reclutación" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+   </main>
+   <footer>
+        <div class="social-links">
+            <a class="social-link" href="CURRICULUM VITAE.pdf" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h10V5H7Zm2 2h6v2H9V7Zm0 4h6v2H9v-2Zm0 4h4v2H9v-2Z"/></svg>
+                </span>
+                <span>Curriculum CV</span>
+            </a>
+
+            <a class="social-link" href="https://discord.com/channels/@sebilaps" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M19.27 5.33A18.4 18.4 0 0 0 15.2 4l-.2.4a16.7 16.7 0 0 1 4.2 2.1c-1.3-.6-2.7-1.1-4.1-1.4a.6.6 0 0 0-.7.3c-.2.4-.3.8-.4 1.2a15.4 15.4 0 0 0-5.3 0 8.7 8.7 0 0 0-.5-1.2.6.6 0 0 0-.7-.3c-1.4.3-2.8.8-4.1 1.4A16.6 16.6 0 0 1 8.8 4l-.2-.4a18.4 18.4 0 0 0-4.07 1.33C1.94 8.11 1.42 11.1 1.7 14.01a18.6 18.6 0 0 0 5.6 2.9l.5-.7a13.4 13.4 0 0 1-2.5-1.2.6.6 0 0 0-.6-.1c-.2.1-.3.3-.3.5 0 .2.1.4.2.6 1.8 2.4 4.6 3.7 7.9 3.7 3.3 0 6.1-1.3 7.9-3.7.2-.2.3-.4.2-.6 0-.2-.1-.4-.3-.5a13.4 13.4 0 0 1-2.5 1.2l.5.7a18.6 18.6 0 0 0 5.6-2.9c.4-3.5-.2-6.5-1.7-8.68ZM8.5 14.6c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm7 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/></svg>
+                </span>
+                <span>Discord</span>
+            </a>
+
+            <a class="social-link" href="https://steamcommunity.com/profiles/76561199064450814/" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm3.1 8.3a3.5 3.5 0 1 1-3.5-3.5h.2l1.1-2.5a4.8 4.8 0 0 1 3.7 4.5c0 .5-.1 1-.2 1.5Zm-2.6-1.6a2.3 2.3 0 1 1 0 4.6 2.3 2.3 0 0 1 0-4.6Zm-3.4 2.1a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Z"/></svg>
+                </span>
+                <span>Steam</span>
+            </a>
+
+            <a class="social-link" href="https://github.com/Sebilaps" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.1c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 2.4-.7 3-1 .1-.7.4-1.2.8-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
+                </span>
+                <span>GitHub</span>
+            </a>
+        </div>
+        <p class="footer-note">&copy; 2026 - Creado en la clase de Programación Web</p>
+</footer>
+<script src="email.js"></script>
+</body>
+</html>

@@ -1,21 +1,19 @@
 # Portafolio
-=======
-# Mi Portafolio - Curriculum
 
-Proyecto personal: portafolio web con varios proyectos incluidos.
+Proyecto personal con varias páginas y mini proyectos web.
 
-Estructura relevante:
-- `index.html` - página principal del portafolio
-- `style.css` - estilos del portafolio
-- `Email.js` - integración con EmailJS para el formulario de contacto
-- `Pokemon minijuego/` - mini juego de Pokémon
-- `MineDex/` - proyecto MineDex incluido como subproyecto
+## Contenido
+- Portafolio principal
+- Mini juego de Pokémon
+- MineDex
 
-Cómo conectar con GitHub (resumen):
-1. Inicializa un repo local: `git init`
-2. Crea un repo remoto en GitHub o usa `gh repo create` si tienes GitHub CLI
-3. Añade remote: `git remote add origin https://github.com/tuusuario/tu-repo.git`
-4. Envía los cambios: `git push -u origin main`
+## Archivos principales
+- index.html
+- style.css
+- Email.js
+- Pokemon-minijuego/
+- MineDex/
 
-Si quieres, puedo intentar crear el repo remoto por ti (necesitaría permiso/credenciales o que uses `gh`).
->>>>>>> 283167c (Initial commit: portfolio + Pokemon minijuego updates)
+## GitHub
+Este proyecto ya está conectado a un repositorio remoto en GitHub:
+- Remote: https://github.com/Sebilaps/Portafolio.git
